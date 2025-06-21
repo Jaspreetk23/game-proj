@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recharge UI</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+<div class="home-wrapper relative">
+    <div class="home-box">
+  <!-- <img src="recharge-frame.png" alt="Recharge Frame" class="frame-image" /> -->
+  <div class="timer">
+    <div class="time-block">
+      <div class="number" id="days">01</div>
+    </div>
+      <!-- <div class="label">Days</div> -->
+    <div class="time-block">
+      <div class="number" id="hours">03</div>
+    </div>
+      <!-- <div class="label">Hours</div> -->
+    <div class="time-block">
+      <div class="number" id="minutes">40</div>
+      <!-- <div class="label">Min</div> -->
+    </div>
+    <div class="time-block">
+      <div class="number" id="seconds">08</div>
+      <!-- <div class="label">Sec</div> -->
+    </div>
+  </div>
+</div>
+
+</div>
+        <!-- 10 -->
+        <div class="ui-wrapper">
+  <!-- Recharge Header -->
+  <div class="image-box recharge-box">
+    <img src="recharge-frame.svg" alt="Recharge Frame">
+    <span>Recharge $10</span>
+  </div>
+
+  <!-- VIP Cards -->
+  <div class="vip-row">
+    <div class="image-box vip-box">
+      <img src="recharge10.svg" alt="VIP Frame">
+      <span>VIP2<br>15 Days</span>
+    </div>
+  </div>
+
+  <!-- Start Button -->
+  <div class="image-box start-box">
+    <img src="start-frame.svg" alt="Start Button">
+    <span>Start</span>
+  </div>
+
+</div>
+
+<!-- 100 -->
+<div class="ui-wrapper">
+  <!-- Recharge Header -->
+  <div class="image-box recharge-box">
+    <img src="recharge-frame.svg" alt="Recharge Frame">
+    <span>Recharge $100</span>
+  </div>
+
+  <!-- VIP Cards -->
+  <div class="vip-row3">
+    <div class="image-box vip-box3">
+      <img src="recharge10.svg" alt="VIP Frame">
+      <span>VIP2<br>15 Days</span>
+    </div>
+    <div class="image-box vip-box3">
+      <img src="recharge100a.svg" alt="VIP Frame">
+      <span>VIP2<br>15 Days</span>
+    </div>
+    <div class="image-box vip-box3">
+      <img src="recharge100b.svg" alt="VIP Frame">
+      <span>VIP2<br>15 Days</span>
+    </div>
+  </div>
+
+  <!-- Start Button -->
+  <div class="image-box start-box">
+    <img src="start-frame.svg" alt="Start Button">
+    <span>Start</span>
+  </div>
+
+</div>
+
+<!-- 200 -->
+<div class="ui-wrapper">
+  <!-- Recharge Header -->
+  <div class="image-box recharge-box">
+    <img src="recharge-frame.svg" alt="Recharge Frame">
+    <span>Recharge $200</span>
+  </div>
+
+  <!-- VIP Cards -->
+  <div class="vip-row3">
+    <div class="image-box vip-box3">
+      <img src="recharge200a.svg" alt="VIP Frame">
+      <span>VIP2<br>15 Days</span>
+    </div>
+    <div class="image-box vip-box3">
+      <img src="recharge200b.svg" alt="VIP Frame">
+      <span>VIP2<br>15 Days</span>
+    </div>
+    <div class="image-box vip-box3">
+      <img src="recharge200c.svg" alt="VIP Frame">
+      <span>VIP2<br>15 Days</span>
+    </div>
+  </div>
+
+  <!-- Start Button -->
+  <div class="image-box start-box">
+    <img src="start-frame.svg" alt="Start Button">
+    <span>Start</span>
+  </div>
+
+</div>
+
+<!-- 500 -->
+ <div class="ui-wrapper">
+  <!-- Recharge Header -->
+  <div class="image-box recharge-box">
+    <img src="recharge-frame.svg" alt="Recharge Frame">
+    <span>Recharge $500</span>
+  </div>
+
+  <!-- VIP Cards -->
+  <div class="vip-row">
+    <div class="image-box vip-box">
+      <img src="recharge500.svg" alt="VIP Frame">
+      <span>VIP2<br>15 Days</span>
+    </div>
+  </div>
+
+  <!-- Start Button -->
+  <div class="image-box start-box">
+    <img src="start-frame.svg" alt="Start Button">
+    <span>Start</span>
+  </div>
+
+</div>
+
+<!-- 1000 -->
+ <div class="ui-wrapper">
+  <!-- Recharge Header -->
+  <div class="image-box recharge-box">
+    <img src="recharge-frame.svg" alt="Recharge Frame">
+    <span>Recharge $1000</span>
+  </div>
+
+  <!-- VIP Cards -->
+  <div class="vip-row">
+    <div class="image-box vip-box">
+      <img src="recharge1000.svg" alt="VIP Frame">
+      <span>VIP2<br>15 Days</span>
+    </div>
+  </div>
+
+  <!-- Start Button -->
+  <div class="image-box start-box">
+    <img src="start-frame.svg" alt="Start Button">
+    <span>Start</span>
+  </div>
+
+</div>
+    </div>
+
+</body>
+<script>
+  // Set your target time (e.g., 1 day, 3 hours, 40 min, 8 sec from now)
+  const targetDate = new Date().getTime() + (1 * 24 * 60 * 60 + 3 * 60 * 60 + 40 * 60 + 8) * 1000;
+
+  const updateTimer = () => {
+    const now = new Date().getTime();
+    const diff = targetDate - now;
+
+    if (diff < 0) {
+      document.getElementById("days").textContent = "00";
+      document.getElementById("hours").textContent = "00";
+      document.getElementById("minutes").textContent = "00";
+      document.getElementById("seconds").textContent = "00";
+      return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+    document.getElementById("days").textContent = String(days).padStart(2, '0');
+    document.getElementById("hours").textContent = String(hours).padStart(2, '0');
+    document.getElementById("minutes").textContent = String(minutes).padStart(2, '0');
+    document.getElementById("seconds").textContent = String(seconds).padStart(2, '0');
+  };
+
+  updateTimer(); // initial call
+  setInterval(updateTimer, 1000);
+</script>
+
+</html>
