@@ -1,16 +1,16 @@
-<svg width="388" height="493" viewBox="0 0 388 493" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect x="14.2572" y="29.0013" width="359.486" height="439.521" fill="#6E2915"/>
-<rect x="341.043" y="12.4025" width="46.862" height="90.2313" fill="url(#pattern0_3_44)"/>
-<rect width="46.862" height="90.2313" transform="matrix(1 0 0 -1 341.138 493)" fill="url(#pattern1_3_44)"/>
-<rect x="47.2698" y="480.996" width="47.1743" height="90.8324" transform="rotate(180 47.2698 480.996)" fill="url(#pattern2_3_44)"/>
-<rect width="46.862" height="90.2313" transform="matrix(-1 0 0 1 46.862 0.478027)" fill="url(#pattern3_3_44)"/>
-<rect x="36.6127" y="456.517" width="313.824" height="15.2013" fill="#FB910A"/>
-<rect x="37.0882" y="21.7597" width="313.824" height="15.2013" fill="#FB910A"/>
-<rect x="368.98" y="378.99" width="264.503" height="9.5098" transform="rotate(-90 368.98 378.99)" fill="#FB910A"/>
-<rect x="368.98" y="378.99" width="264.503" height="9.5098" transform="rotate(-90 368.98 378.99)" fill="#FB910A"/>
-<rect x="9.5098" y="377.47" width="264.503" height="9.5098" transform="rotate(-90 9.5098 377.47)" fill="#FB910A"/>
-<rect x="36.6127" y="468.678" width="313.824" height="3.04026" fill="#AF4D05"/>
-<rect x="37.0882" y="21.7597" width="313.824" height="3.04026" fill="#AF4D05"/>
+<svg width="388" height="484" viewBox="0 0 388 484" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect x="14.2572" y="23.5232" width="359.486" height="439.521" fill="#6E2915"/>
+<rect x="341" width="46.862" height="90.2313" fill="url(#pattern0_3_44)"/>
+<rect width="46.862" height="90.2313" transform="matrix(1 0 0 -1 341 483.231)" fill="url(#pattern1_3_44)"/>
+<rect x="47.1743" y="482.832" width="47.1743" height="90.8324" transform="rotate(180 47.1743 482.832)" fill="url(#pattern2_3_44)"/>
+<rect width="46.862" height="90.2313" transform="matrix(-1 0 0 1 47.862 0)" fill="url(#pattern3_3_44)"/>
+<rect x="37" y="448" width="313.824" height="15.2013" fill="#FB910A"/>
+<rect x="37.0882" y="16.2817" width="313.824" height="15.2013" fill="#FB910A"/>
+<rect x="366.98" y="373.512" width="264.503" height="9.5098" transform="rotate(-90 366.98 373.512)" fill="#FB910A"/>
+<path d="M364 397V89H377V397H364Z" fill="#FB910A"/>
+<path d="M11 392L11 85H24L24 392H11Z" fill="#FB910A"/>
+<rect x="36.6127" y="463.2" width="313.824" height="3.04026" fill="#AF4D05"/>
+<rect x="37.0882" y="16.2817" width="313.824" height="3.04026" fill="#AF4D05"/>
 <defs>
 <pattern id="pattern0_3_44" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_3_44" transform="scale(0.00207039 0.00107527)"/>
